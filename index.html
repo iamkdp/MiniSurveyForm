@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>KDP Movie Form </title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">Mini Movie Survey Form</h1>
+        <p id="description">Thank you for taking the time.</p>
+        <div class="sur-form">
+            <form action="https://api.web3forms.com/submit" method="POST" id="survey-form">
+                <input type="hidden" name="access_key" value="9cd906f4-6dfa-4c78-b0e3-1bc5648503dc">
+
+                <label id="name-label">
+      <label for="name" id="name-label">Name:</label>
+                <input id="name" name="username" type="text" placeholder="Enter your name" required/>
+                </label>
+                <label id="email-label">
+    EMAIL:
+    <input  id="email" type="email" placeholder="Enter your email" required>
+    </label>
+                <label id="number-label">
+PHN NUMBER:
+    <input id="number" type="number"only min="0" max="9999999999" placeholder="Enter your phn number"/>
+      </label>
+                <label id="dropdown-;abel">
+      <br> Gender:
+        <select id="dropdown">
+          <option>Male</option>
+          <option>Female</option>
+          <br>
+        </select>
+</label>
+                <label>
+  <br>Select if you like them:
+    <br>
+  Mahesh     <input class="cradio" type="radio" name="group1" value="babu"/> 
+   Nani      <input class="cradio" type="radio" name="group1" value="nani"/> 
+  Surya       <input class="cradio" type="radio" name="group1" value="surya"/> 
+</label>
+                <label id="Genre">
+             <br> Slect Your favouritegenre:
+            <br>
+          <input class="ccheckbox" type="checkbox" value="Action"/> Action
+          <input class="ccheckbox" type="checkbox" value="Drama" />Drama
+          <input class="ccheckbox" type="checkbox" value="Sci-fi" />Sci-fi
+          </label>
+                <label>
+            <br>
+                        <br> TELL ME ABOUT YOU FAV FILM:
+<textarea rows="5" cols="24" placeholder="MY FAV FILM IS KHALEJA"></textarea><br>
+            </label>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
